@@ -1,0 +1,217 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pamir Portfolio</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    {{bootstrap.load_css()}}
+    {% from 'bootstrap5/form.html' import  render_form %}
+</head>
+<body>
+
+<div class = container_for_all>
+
+    <div class="sidebar">
+
+        <div class="nav-bar"  >
+
+        <div class="menu">
+            <div>
+                 <a href="#home" >
+                     <img src="{{url_for('static', filename='images/home-icon.png')}} ">
+                    <p>Home</p>
+                </a>
+            </div>
+
+               <div>
+                 <a href="#skills">
+                     <img src="{{url_for('static', filename='images/user-network-icon.png')}} " >
+                     <p>Skills</p>
+                 </a>
+            </div>
+
+               <div>
+                 <a href="#projects">
+                     <img src="{{url_for('static', filename='images/project-management-timeline-icon.png')}} " >
+                     <p>Projects</p>
+                 </a>
+            </div>
+
+               <div>
+                <a href="#education">
+                    <img src="{{url_for('static', filename='images/graduation-cap-icon.png')}} " >
+                    <p>Education</p>
+                </a>
+            </div>
+
+               <div>
+                 <a href="#contact">
+                     <img src="{{url_for('static', filename='images/envelope-line-icon.png')}} " >
+                     <p> Contact </p>
+                 </a>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <div class="all">
+
+
+    <header id="home">
+    <div class="main-title" >
+        <!--<img src="{{url_for('static', filename='images/portfolio-background.png')}}" style="height:80vh; width:100%" >-->
+    </div>
+
+</header>
+<!-- end of header section........................................-->
+
+<main>
+
+    <div class="skills" id="skills">
+        <div class="skills-title">
+           <img src="{{url_for('static', filename='images/user-network-icon.png')}} " style="width:80px">
+          <h2 style="font-size: 40px;">Things I Do</h2>
+        </div>
+
+        <div class="skills-items">
+            <div>
+                <img src="{{url_for('static', filename='images/cross-platform-icon.png')}}" style=" width: 120px;">
+                <h3>Full Stack Web Development</h3>
+            </div>
+            <div>
+                <img src="{{url_for('static', filename='images/data-analytics-icon.png')}}" style="width: 120px;">
+                <h3>Data Analysis</h3>
+            </div>
+            <div>
+                <img src="{{url_for('static', filename='images/game-development-icon.png')}}" style=" width: 120px;">
+                <h3>Game Development</h3>
+            </div>
+        </div>
+
+    </div>
+<!-- end of skills section........................................-->
+
+
+    <div class="projects" id="projects">
+
+        <div class="projects-title">
+          <img src="{{url_for('static', filename='images/project-management-timeline-icon.png')}}" style="width: 80px;">
+          <h2 style="font-size: 40px;">My Work</h2>
+        </div>
+
+        <div class="projects-items">
+
+            <div>
+                <div class="card" style="width: 18rem;">
+                  <img src="{{url_for('static', filename='images/blog.png')}}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Blog Website</h5>
+                    <p class="card-text"> </p>
+                    <a href="https://pamirs-blog.onrender.com/" class="btn btn-primary" target="_blank">Go to my blog website</a>
+                  </div>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="card" style="width: 18rem;">
+                  <img src="{{url_for('static', filename='images/text_to_morse_code.png')}}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Text To Morse Code</h5>
+                    <p class="card-text"> </p>
+                    <a href="https://text-to-morse-code-xxr0.onrender.com/" class="btn btn-primary" target="_blank">visit the website</a>
+                  </div>
+                </div>
+             </div>
+
+        </div>
+    </div>
+
+ <!-- end of projects section........................................-->
+
+
+    <div class="education" id="education">
+
+        <div class="education-title">
+            <img src="{{url_for('static', filename='images/graduation-cap-icon.png')}}" style="width:80px;">
+            <h2 style="font-size:40px;">My Education</h2>
+        </div>
+
+        <div class="education-items">
+
+            <div class="institution">
+                <h3> Harvard University</h3>
+                <span>January 2025</span>
+                <p>Certificate of Web Development</p>
+            </div>
+
+            <div class="institution">
+                <h3> Nangarhar University, Afghanistan</h3>
+                <span>September 2016 - September 2020</span>
+                <p>Bachelor of Computer Science(BCS)</p>
+            </div>
+
+
+
+            <div class="institution">
+                <h3> Khurasan University, Afghanistan</h3>
+                <span>2017 - 2018</span>
+                <p>Diploma in English Language (DEL)</p>
+            </div>
+
+        <div class="institution">
+                <h3> Batikot High School, Afghanistan</h3>
+                <span>September 2012 - June 2015</span>
+        </div>
+
+    </div>
+    </div>
+
+<!-- end of projects section........................................-->
+
+    <div class="contact" id="contact">
+
+        <div class="contact-title">
+            <img src="{{url_for('static', filename='images/envelope-icon.png')}} " style="width:80px">
+            <h2>Stay In Touch</h2>
+        </div>
+
+        <div class="contact-form" style="display: flex; justify-content:center;">
+            <div style="width:50%; ">
+                {{render_form(form)}}
+            </div>
+
+
+
+        </div>
+    </div>
+ <!-- end of contact section........................................-->
+
+</main>
+
+
+<!-- end of main section........................................-->
+
+<footer>
+    <div >
+        <p>
+            &copy;
+            <span id="year"></span>
+            Pshinwari. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+
+    </div>
+
+
+
+</div>
+</body>
+</html>
