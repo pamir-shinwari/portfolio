@@ -35,19 +35,15 @@ def home():
         from_email = form.email.data
         message = form.message.data
 
-        with smtplib.SMTP("smtp.gmail.com") as connection:
-            connection.starttls()
-            connection.login(my_email, PASSWORD)
-            connection.sendmail(
-                from_addr=my_email,
-                to_addrs=my_email,
-                msg=f"Subject:Email From Portfolio !\n\n Name: {name} \n Email Address: {from_email} \n\n {message}"
-            )
-
+        smtp_server = smtplib.SMTP_SSL("smtp.gmail.com")
+        smtp_server.login(my_email, PASSWORD)
+        smtp_server.sendmail(from_addr=my_email, to_addrs=my_email,
+                             msg=f"Subject: Message from website \n\n {name} \n {from_email}\n\n {message} ")
+        smtp_server.quit()
         return render_template('email_confirmation.html')
     print(my_email)
     return render_template('index.html', form=form)
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5002)
+    app.run(debug=False)
