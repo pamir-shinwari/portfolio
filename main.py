@@ -6,13 +6,16 @@ from wtforms import StringField, PasswordField, SubmitField, EmailField, DateFie
 from wtforms.validators import DataRequired, length
 from flask_ckeditor import CKEditor, CKEditorField
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 app = Flask(__name__)
 bootstrap = Bootstrap5(app)
 app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 
-MY_EMAIL = os.environ.get("MY_EMAIL")
+my_email = os.environ.get("MY_EMAIL")
 PASSWORD = os.environ.get("PASSWORD")
 
 
@@ -31,18 +34,19 @@ def home():
         from_email = form.email.data
         message = form.message.data
 
-
         with smtplib.SMTP("smtp.gmail.com") as connection:
             connection.starttls()
-            connection.login(MY_EMAIL, PASSWORD)
+            connection.login(my_email, PASSWORD)
             connection.sendmail(
-                from_addr=MY_EMAIL,
-                to_addrs=MY_EMAIL,
+                from_addr=my_email,
+                to_addrs=my_email,
                 msg=f"Subject:Email From Portfolio !\n\n Name: {name} \n Email Address: {from_email} \n\n {message}"
             )
+
         return render_template('email_confirmation.html')
+    print(my_email)
     return render_template('index.html', form=form)
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5003)
+    app.run(debug=True, port=5002)
