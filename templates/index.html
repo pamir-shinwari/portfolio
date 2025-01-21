@@ -112,7 +112,7 @@
                   <div class="card-body">
                     <h5 class="card-title">Blog Website</h5>
                     <p class="card-text"> </p>
-                    <a href="https://pamirs-blog.onrender.com/" class="btn btn-primary" target="_blank">Go to my blog website</a>
+                    <a href="https://pamirs-blog.onrender.com/" class="btn btn-secondary" target="_blank">Visit the website</a>
                   </div>
                 </div>
             </div>
@@ -124,7 +124,7 @@
                   <div class="card-body">
                     <h5 class="card-title">Text To Morse Code</h5>
                     <p class="card-text"> </p>
-                    <a href="https://text-to-morse-code-xxr0.onrender.com/" class="btn btn-primary" target="_blank">visit the website</a>
+                    <a href="https://text-to-morse-code-xxr0.onrender.com/" class="btn btn-secondary" target="_blank">Visit the website</a>
                   </div>
                 </div>
              </div>
@@ -198,13 +198,28 @@
 <!-- end of main section........................................-->
 
 <footer>
-    <div >
-        <p>
+    <div class="footer">
+    <div class="footer-items">
+
+     <div class="social">
+
+        <a href="https://www.linkedin.com/in/pamir-shinwari-01b741205/" target="_blank"> <img src="{{url_for('static', filename='images/follow-us-on-linkedin-icon.png')}}"></a>
+        <a href="https://www.facebook.com/pamir.shinwari.1/" target="_blank"> <img src="{{url_for('static', filename='images/find-us-on-facebook-icon.png')}}"></a>
+        <a href="https://github.com/pamir-shinwari" target="_blank"> <img src="{{url_for('static', filename='images/github-icon.png')}}"  style="width:50px;"></a>
+
+    </div>
+
+    <div class="copyright" >
+        <p class="copyright-item">
             &copy;
-            <span id="year"></span>
+            <span id="year">{{year}}</span>
             Pshinwari. All rights reserved.
         </p>
     </div>
+
+
+   </div>
+</div>
 </footer>
 
 

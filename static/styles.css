@@ -144,16 +144,7 @@ align-items: center;
 
 
 
-footer{
-background-color: black;
-color: white;
-overflow: hidden;
-}
 
-footer div{
-display:flex;
-justify-content:center;
-}
 
 .contact{
 background-color:#EFF3EA;
@@ -172,4 +163,29 @@ align-items: center;
 .email{
 display:grid;
 justify-items: center;
+}
+
+
+
+.footer{
+background-color: gray;
+color: white;
+overflow: hidden;
+display:grid;
+justify-items: center;
+
+}
+
+
+.social{
+display:flex;
+gap: 40px;
+align-items: center;
+}
+.social a img{
+width:72px;
+}
+
+.copyright-item{
+font-size:12px;
 }

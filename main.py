@@ -7,6 +7,7 @@ from wtforms.validators import DataRequired, length
 from flask_ckeditor import CKEditor, CKEditorField
 import os
 from dotenv import load_dotenv
+import datetime
 
 load_dotenv()
 
@@ -40,9 +41,11 @@ def home():
         smtp_server.sendmail(from_addr=my_email, to_addrs=my_email,
                              msg=f"Subject: Message from website \n\n {name} \n {from_email}\n\n {message} ")
         smtp_server.quit()
+
         return render_template('email_confirmation.html')
-    print(my_email)
-    return render_template('index.html', form=form)
+
+    year = datetime.datetime.now().year
+    return render_template('index.html', form=form, year=year)
 
 
 if __name__ == '__main__':
