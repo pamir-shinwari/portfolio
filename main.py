@@ -16,8 +16,8 @@ bootstrap = Bootstrap5(app)
 app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 
 
-my_email ="forcode43@gmail.com" #os.environ.get("MY_EMAIL")
-PASSWORD ="ssyi ntcp wmnq dllb" #os.environ.get("PASSWORD")
+my_email = os.environ.get("MY_EMAIL")
+PASSWORD = os.environ.get("PASSWORD")
 
 
 class ContactForm(FlaskForm):
