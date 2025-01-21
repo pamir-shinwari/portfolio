@@ -15,6 +15,7 @@ app = Flask(__name__)
 bootstrap = Bootstrap5(app)
 app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 
+
 my_email = os.environ.get("MY_EMAIL")
 PASSWORD = os.environ.get("PASSWORD")
 
