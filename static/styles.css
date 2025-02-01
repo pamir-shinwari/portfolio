@@ -108,6 +108,8 @@ margin-top: 5%;
 display: grid;
 grid-template-columns:1fr 1fr;
 justify-items: center;
+gap: 40px;
+
 }
 
 .projects-title{

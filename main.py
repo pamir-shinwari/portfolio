@@ -1,10 +1,10 @@
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template
 from flask_bootstrap import Bootstrap5
 import smtplib
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, EmailField, DateField, URLField, TextAreaField
-from wtforms.validators import DataRequired, length
-from flask_ckeditor import CKEditor, CKEditorField
+from wtforms import StringField, SubmitField, EmailField, TextAreaField
+from wtforms.validators import DataRequired
+
 import os
 from dotenv import load_dotenv
 import datetime
@@ -24,7 +24,7 @@ PASSWORD = os.environ.get("PASSWORD")
 class ContactForm(FlaskForm):
     name = StringField('Name', validators=[DataRequired()])
     email = EmailField('Email', validators=[DataRequired()])
-    message = TextAreaField('Message', validators=[DataRequired()], )
+    message = TextAreaField('Message', validators=[DataRequired()])
     submit = SubmitField()
 
 
@@ -49,4 +49,4 @@ def home():
 
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True, port=8001)
