@@ -67,10 +67,20 @@ background-position: center;*/
 
 
 .skills{
-background-color:#AAB99A;
 padding:5% 0 20% 20px;
-/*padding-left:20px;*/
+background-color:#AAB99A;
+animation: grow-op linear;
+animation-timeline: view();
+animation-range: entry 0% cover 40%;
 }
+
+
+@keyframes grow-op{
+from{opacity:0; scale:0.5;}
+to{opacity:1; scale:1;}
+}
+
+
 .skills-items{
 margin-top: 5%;
 display: grid;
@@ -87,11 +97,30 @@ text-align:center;
 
 }
 
+/*@keyframes grow{
+from{font-size:0px;}
+to{font-size:auto;}
+}
+@keyframes grow-img{
+from{width:0px;}
+to{width:120px;}
+}*/
+
 .skills-items div img{
+/*animation-name: grow-img;
+animation-duration: 2s;
+animation-timeline: view();*/
 /*border: 5px solid gray ;
 border-radius:30% ;
 padding:10px ;*/
 }
+
+.skills-items div h3{
+/*animation-name: grow;
+animation-duration: 2S;
+animation-timeline: view();*/
+}
+
 
 .skills-title{
 display: flex;
@@ -104,6 +133,10 @@ align-items: center;
 padding-bottom: ;
 background-color:#D0DDD0;
 padding:5% 0 20% 20px;
+
+animation-name: grow-op;
+animation-timeline: view();
+animation-range: entry 0% cover 40%;
 }
 .projects-items{
 margin-top: 5%;
@@ -125,6 +158,10 @@ gap:2%;
 
 background-color:#F0F0D7;
 padding:5% 0 20% 20px;
+
+animation-name: grow-op;
+animation-timeline: view();
+animation-range: entry 0% cover 40%;
 }
 
 .institution{
@@ -146,13 +183,13 @@ gap:2%;
 align-items: center;
 }
 
-
-
-
-
 .contact{
 background-color:#EFF3EA;
 padding:5% 0 20% 20px;
+
+animation-name: grow-op;
+animation-timeline: view();
+animation-range: entry 0% cover 40%;
 
 }
 
@@ -168,8 +205,6 @@ align-items: center;
 display:grid;
 justify-items: center;
 }
-
-
 
 .footer{
 background-color: gray;
@@ -193,3 +228,5 @@ width:72px;
 .copyright-item{
 font-size:12px;
 }
+
+
