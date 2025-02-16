@@ -230,3 +230,104 @@ font-size:12px;
 }
 
 
+
+.hero{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing:border-box ;
+    padding: 5%;
+    background-color: #E8F9FF;
+}
+
+.right-hero img{
+    width: 400px;
+}
+
+.left-hero h1{
+    font-size:80px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    font-family: "Wallpoet", serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+.left-hero h2{
+    font-size:50px;
+    font-family: "Sarpanch", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.left-hero p{
+    font-family: "Space Grotesk", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media screen and (max-width:1000px){
+    .right-hero img{
+        width:200px;
+    }
+    .left-hero h1{
+        font-size:50px;
+        font-family: "Wallpoet", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .left-hero h2{
+        font-size:30px;
+        font-family: "Sarpanch", serif;
+        font-weight: 400;
+        font-style: normal;
+
+
+    }
+
+}
+
+
+
+
+@media screen and (max-width:700px){
+    .right-hero img{
+        width:100px;
+    }
+    .left-hero h1{
+        font-size:20px;
+        font-family: "Wallpoet", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .left-hero h2{
+        font-size:10px;
+        font-family: "Sarpanch", serif;
+        font-weight: 400;
+        font-style: normal;
+
+
+    }
+
+
+    .left-hero p{
+    font-size: 10px;
+    font-family: "Space Grotesk", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+}
+
+
+
+
+

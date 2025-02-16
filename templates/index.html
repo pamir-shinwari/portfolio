@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pamir Portfolio</title>
     <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarpanch&family=Space+Grotesk&family=Wallpoet&display=swap" rel="stylesheet">
+
+
     {{bootstrap.load_css()}}
     {% from 'bootstrap5/form.html' import  render_form %}
 </head>
@@ -63,13 +69,17 @@
     <div class="all">
 
 
-    <header id="home">
-    <div class="main-title" >
-
-        <img src="{{url_for('static', filename='images/b12.png')}}" style="height:100vh;  width: 100%;" >
+    <div class="hero" id="home">
+        <div class="left-hero">
+           <h1>Hi, I'm Pamir</h1>
+            <h2>A full Stack Software Engineer</h2>
+            <p>I speak Python and Javascript. I use Django, Flask and React framworks for full stack web development.
+            </p>
+        </div>
+        <div class="right-hero">
+            <img src="{{url_for('static', filename='images/pamir2.png')}}" alt="pamir's photo">
+        </div>
     </div>
-
-</header>
 <!-- end of header section........................................-->
 
 <main>
