@@ -235,7 +235,7 @@ font-size:12px;
     justify-content: space-between;
     box-sizing:border-box ;
     padding: 5%;
-    background-color: #E8F9FF;
+   /* background-color: #E8F9FF;*/
 }
 
 .right-hero img{
