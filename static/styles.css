@@ -307,8 +307,8 @@ to{font-size:auto;}
         font-weight: 400;
         font-style: normal;
 
-        animation-name: grow-s-h1;
-        animation-duration: 2s;
+        /*animation-name: grow-s-h1;
+        animation-duration: 2s;*/
     }
 
     .left-hero h2{
@@ -317,8 +317,8 @@ to{font-size:auto;}
         font-weight: 400;
         font-style: normal;
 
-        animation-name: grow-s-h2;
-        animation-duration: 2s;
+       /* animation-name: grow-s-h2;
+        animation-duration: 2s;*/
 
     }
 
