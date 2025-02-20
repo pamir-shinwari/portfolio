@@ -249,18 +249,14 @@ to{font-size:auto;}
 
 @keyframes grow-s-h1{
 from{font-size:0px;}
-to{font-size:auto;}
+to{font-size:50px;}
 }
 
 @keyframes grow-s-h2{
 from{font-size:0px;}
-to{font-size:auto;}
+to{font-size:30px;}
 }
 
-@keyframes grow-s-p{
-from{font-size:0px;}
-to{font-size:auto;}
-}
 
 .left-hero h1{
     font-size:80px;
@@ -307,8 +303,8 @@ to{font-size:auto;}
         font-weight: 400;
         font-style: normal;
 
-        /*animation-name: grow-s-h1;
-        animation-duration: 2s;*/
+        animation-name: grow-s-h1;
+        animation-duration: 2s;
     }
 
     .left-hero h2{
@@ -317,8 +313,8 @@ to{font-size:auto;}
         font-weight: 400;
         font-style: normal;
 
-       /* animation-name: grow-s-h2;
-        animation-duration: 2s;*/
+     animation-name: grow-s-h2;
+        animation-duration: 2s;
 
     }
 
