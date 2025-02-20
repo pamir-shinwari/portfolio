@@ -8,8 +8,7 @@ display:grid;
 grid-template-columns:0.1fr 1.9fr;
 }
 
-.all{
-}
+
 
 .sidebar{
 background-color:;
@@ -56,14 +55,14 @@ z-index:1;
 }
 
 
-header{
-/*height: 100vh;
+/*header{
+*//*height: 100vh;
 width:100%;
 background-image: url("images/b12.png");
 background-repeat: no-repeat;
 background-size: cover;
-background-position: center;*/
-}
+background-position: center;*//*
+}*/
 
 
 .skills{
@@ -230,7 +229,6 @@ font-size:12px;
 }
 
 
-
 .hero{
     display:flex;
     align-items: center;
@@ -295,6 +293,7 @@ font-size:12px;
 
 
 
+/*
 
 @media screen and (max-width:700px){
     .right-hero img{
@@ -326,6 +325,7 @@ font-size:12px;
 }
 
 }
+*/
 
 
 
