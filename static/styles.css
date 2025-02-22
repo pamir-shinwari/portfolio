@@ -87,7 +87,6 @@ display: grid;
 grid-template-columns:1fr 1fr;
 justify-items: center;
 
-
 }
 
 .skills-items div{
@@ -303,6 +302,15 @@ font-size:12px;
     }
 
 .projects-items{
+margin-top: 5%;
+display: grid;
+grid-template-columns:1fr;
+justify-items: center;
+gap: 40px;
+
+}
+
+.skills-items{
 margin-top: 5%;
 display: grid;
 grid-template-columns:1fr;
