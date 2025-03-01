@@ -234,7 +234,7 @@ font-size:12px;
     justify-content: space-between;
     box-sizing:border-box ;
     padding: 5%;
-   /* background-color: #E8F9FF;*/
+   /*background-color: black;*/
 }
 
 .right-hero img{
@@ -249,6 +249,7 @@ font-size:12px;
     font-size:80px;
     padding-bottom: 0;
     margin-bottom: 0;
+
 
     font-family: "Wallpoet", serif;
     font-weight: 400;
